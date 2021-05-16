@@ -1,3 +1,9 @@
+//call in web 3 and declare transaction value type.
+use web3::types::{TransactionRequest, U256};
+
+// call in tokio to use async function
+#[tokio::main]
+
 pub async fn main() -> web3::Result<()> {
 //Declare web3 port
     let transport = web3::transports::Http::new("http://localhost:8545")?;
