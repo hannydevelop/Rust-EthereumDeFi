@@ -1,5 +1,6 @@
 mod nodesigned;
 
-fn main() {
-    nodesigned::main();
+#[tokio::main]
+async fn main() {
+    nodesigned::main().await.ok();
 }
